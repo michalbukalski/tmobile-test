@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="210dad77-0418-4d63-81d0-ecb18487f55e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Feature/WybranieTelefonuZListyOfert.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DevicesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/TestAddProductToCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/WybieranieTelefonuZListyOfertyPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Steps/WybranieTelefonuZListyOfertSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Feature/WybranieTelefonuZListyOfert.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Feature/WybranieTelefonuZListyOfert.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DevicesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/DevicesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/WybranieTelefonuZListyOfertSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/WybranieTelefonuZListyOfertSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +48,20 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.SeleniumTest.executor": "Run",
     "Cucumber Java.Feature: WybranieTelefonuZListyOfert.executor": "Run",
+    "Cucumber Java.Scenario: Dodanie produktu do koszyka.executor": "Run",
     "Cucumber Java.Scenario: Open 'Urzadzenia' tab.executor": "Run",
     "Cucumber Java.Scenario: Open correct web page.executor": "Run",
     "Cucumber Java.Scenario: Otworzenie przeglądarki.executor": "Run",
     "Cucumber Java.Scenario: Przejście na stronę T-Mobile.executor": "Run",
+    "Cucumber Java.Scenario: Sprawdzenie czy ceny pozostają bez zmian.executor": "Run",
+    "Cucumber Java.Scenario: Wybór kategorii \"Bez abonamentu\".executor": "Run",
+    "Cucumber Java.Scenario: Wybór pierwszego produktu.executor": "Run",
     "Cucumber Java.Scenario: Wybór sekcji {Urządzenia}\".executor": "Run",
     "Maven.tmobile-test [install,-DforkCount=0...].executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "first-branch",
+    "git-widget-placeholder": "second-branch",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Michal/IdeaProjects/tmobile-test/src/test/java",
@@ -77,19 +74,20 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Pages" />
       <recent name="stepDefinition" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Wybór sekcji {Urządzenia}&quot;">
-    <configuration name="Scenario: Open 'Urzadzenia' tab" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Sprawdzenie czy ceny pozostają bez zmian">
+    <configuration name="Scenario: Dodanie produktu do koszyka" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/WybranieTelefonuZListyOfert.feature" />
       <option name="GLUE" value="Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="tmobile-test" />
-      <option name="NAME_FILTER" value="^Open \'Urzadzenia\' tab$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Open \'Urzadzenia\' tab$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Open 'Urzadzenia' tab" />
+      <option name="NAME_FILTER" value="^Dodanie produktu do koszyka$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Dodanie produktu do koszyka$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Dodanie produktu do koszyka" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -101,15 +99,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Open correct web page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Sprawdzenie czy ceny pozostają bez zmian" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/WybranieTelefonuZListyOfert.feature" />
       <option name="GLUE" value="Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="tmobile-test" />
-      <option name="NAME_FILTER" value="^Open correct web page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Open correct web page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Open correct web page" />
+      <option name="NAME_FILTER" value="^Sprawdzenie czy ceny pozostają bez zmian$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Sprawdzenie czy ceny pozostają bez zmian$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Sprawdzenie czy ceny pozostają bez zmian" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -121,15 +119,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Otworzenie przeglądarki" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Wybór kategorii &quot;Bez abonamentu&quot;" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/WybranieTelefonuZListyOfert.feature" />
       <option name="GLUE" value="Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="tmobile-test" />
-      <option name="NAME_FILTER" value="^Otworzenie przeglądarki$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Otworzenie przeglądarki$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Otworzenie przeglądarki" />
+      <option name="NAME_FILTER" value="^Wybór kategorii \&quot;Bez abonamentu\&quot;$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Wybór kategorii \&quot;Bez abonamentu\&quot;$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Wybór kategorii &quot;Bez abonamentu&quot;" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -141,15 +139,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Przejście na stronę T-Mobile" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Wybór pierwszego produktu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/WybranieTelefonuZListyOfert.feature" />
       <option name="GLUE" value="Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="tmobile-test" />
-      <option name="NAME_FILTER" value="^Przejście na stronę T\-Mobile$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Przejście na stronę T\-Mobile$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Przejście na stronę T-Mobile" />
+      <option name="NAME_FILTER" value="^Wybór pierwszego produktu$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Wybór pierwszego produktu$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Wybór pierwszego produktu" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -183,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Sprawdzenie czy ceny pozostają bez zmian" />
+        <item itemvalue="Cucumber Java.Scenario: Dodanie produktu do koszyka" />
+        <item itemvalue="Cucumber Java.Scenario: Wybór pierwszego produktu" />
+        <item itemvalue="Cucumber Java.Scenario: Wybór kategorii &quot;Bez abonamentu&quot;" />
         <item itemvalue="Cucumber Java.Scenario: Wybór sekcji {Urządzenia}&quot;" />
-        <item itemvalue="Cucumber Java.Scenario: Przejście na stronę T-Mobile" />
-        <item itemvalue="Cucumber Java.Scenario: Otworzenie przeglądarki" />
-        <item itemvalue="Cucumber Java.Scenario: Open 'Urzadzenia' tab" />
-        <item itemvalue="Cucumber Java.Scenario: Open correct web page" />
       </list>
     </recent_temporary>
   </component>

@@ -17,6 +17,11 @@ public class DevicesPage extends BasePage {
     }
 
     public void chooseCategoryFromColumn(String category, String column) {
+        //li[//span[@class and contains(.,'Bez abonamentu')]]//p[@class and contains(.,'Smartwatche i opaski')
+        String xpath = String.format("(//span[@class and contains(.,'%s')])[2]",category);
+        WebElement devicesSection = driver.findElement(By.xpath(xpath));
+        devicesSection.click();
+
     }
 
     // Dodaj inne metody specyficzne dla strony wyboru urządzeń, jeśli są potrzebne

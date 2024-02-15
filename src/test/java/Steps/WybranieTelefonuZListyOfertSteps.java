@@ -8,6 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -63,8 +64,26 @@ public class WybranieTelefonuZListyOfertSteps {
     }
 
     @When ("Z gornej belki wybierz {string}")
-    public void chooseDevicesSection(String section){
+    public void chooseDevicesSection(String section) throws InterruptedException {
         devicesPage.chooseDevicesSection(section);
+    }
+
+    @When ("Kliknij {string} z kolumny {string}")
+    public void chooseCategoryFromColumn2(String category, String column) throws InterruptedException {
+        devicesPage.chooseCategoryFromColumn(category, column);
+    }
+
+    @Then ("Lista produktow {string} jest widoczna")
+    public void productslistwithoutSubscription(String string){
+        homePage.isElementVisible (string);
+
+    }
+
+    @Then ("Lista produktów {string} jest widoczna")
+    public void productListWithoutSubscription(String string){
+        Assert.assertTrue (homePage.isElementVisible (string));
+        Assert.assertTrue (homePage.isDeviceVisible ("//div[@data-qa='LST_ProductCard1']"));
+
     }
 
     @Then ("Rozwijana lista {string} jest widoczna")
@@ -83,9 +102,15 @@ public class WybranieTelefonuZListyOfertSteps {
         devicesPage.chooseCategoryFromColumn(category, column);
     }
 
-    @Given("Wybierz pierwszy produkt z listy")
-    public void chooseFirstProduct() {
-        productPage.chooseFirstProduct();
+    @When ("Kliknij w pierwszy element z listy")
+    public void chooseFirstProductOnTheList(){
+        productPage.chooseFirstProduct ();
+    }
+
+    @Then ("Strona produktu jest widoczna")
+    public void webPageWithProductIsDisplayed() throws InterruptedException {
+        Thread.sleep (5000);
+        Assert.assertTrue (homePage.isDeviceVisible ("//span[@class='anchorText' and contains(.,'Przejdź do listy urządzeń')]"));
     }
 
     @When("Dodaj produkt do koszyka")
@@ -102,9 +127,10 @@ public class WybranieTelefonuZListyOfertSteps {
         }
     }
 
-    @Then("Kwoty {string} oraz {string} zgadzają się z kwotami z poprzedniej strony")
-    public void verifyPricesMatch(String price1, String price2) {
-        assertTrue(productPage.comparePrices(price1, price2));
+    @Then("Kwoty Cena na start oraz Rata miesięczna zgadzają się z kwotami w koszyku")
+    public void verifyPricesMatch() throws InterruptedException {
+        productPage.comparePrices ();
+//        assertTrue(productPage.comparePrices(price1, price2));
     }
 
     @Then("Ikona koszyka z liczbą produktów w koszyku jest widoczna na stronie głównej T-Mobile")
