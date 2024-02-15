@@ -9,8 +9,7 @@ public class DevicesPage extends BasePage {
     }
 
     public void chooseDevicesSection(String section) {
-//        WebElement devicesSection = driver.findElement(By.xpath("button[@type='button' and contains(.,'%s')]"));
-//        devicesSection.click();
+
         String xpath = String.format("//button[@type='button' and contains(.,'%s')]", section);
         WebElement devicesSection = driver.findElement(By.xpath(xpath));
         devicesSection.click();
@@ -24,6 +23,5 @@ public class DevicesPage extends BasePage {
 
     }
 
-    // Dodaj inne metody specyficzne dla strony wyboru urządzeń, jeśli są potrzebne
 }
 

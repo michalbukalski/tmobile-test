@@ -13,5 +13,4 @@ public class CartPage extends BasePage {
         return cartPageTitle.isDisplayed();
     }
 
-    // Dodaj inne metody specyficzne dla strony koszyka, jeśli są potrzebne
 }

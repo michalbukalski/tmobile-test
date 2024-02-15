@@ -4,6 +4,7 @@ import Pages.DevicesPage;
 import Pages.HomePage;
 import Pages.ProductPage;
 import io.cucumber.java.After;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -114,8 +115,9 @@ public class WybranieTelefonuZListyOfertSteps {
     }
 
     @When("Dodaj produkt do koszyka")
-    public void addProductToCart() {
+    public void addProductToCart() throws InterruptedException {
         productPage.addProductToCart();
+        Thread.sleep (5000);
     }
 
     @Then("Strona {string} jest widoczna")
@@ -133,8 +135,8 @@ public class WybranieTelefonuZListyOfertSteps {
 //        assertTrue(productPage.comparePrices(price1, price2));
     }
 
-    @Then("Ikona koszyka z liczbą produktów w koszyku jest widoczna na stronie głównej T-Mobile")
-    public void verifyCartIconIsVisibleOnHomePage() {
+    @And ("W prawym górnym rogu widoczna jest ikonka koszyka z liczbą produktów w koszyku")
+    public void verifyCartIconIsVisibleOnHomePage() throws InterruptedException {
         assertTrue(homePage.isCartIconVisible());
     }
 
