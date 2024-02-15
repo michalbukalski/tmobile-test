@@ -41,6 +41,4 @@ public class HomePage extends BasePage {
     public boolean isBrowserOpened() {
         return driver != null; // Zwraca true, jeśli driver nie jest nullem
     }
-
-    // Dodaj inne metody specyficzne dla strony głównej, jeśli są potrzebne
 }

@@ -1,26 +1,17 @@
 package Pages;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
 
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+/*---------------------------------------------------------------------------------------------------------------------
+W BasePage stosując wrzocec Page Object Pattern powinno zawrzec się wiele przydatnych funkcji oraz metod,
+które będą wspólne dla wszystkich stron w projekcie
+-----------------------------------------------------------------------------------------------------------------------*/
 
 public class BasePage {
     protected WebDriver driver;
@@ -28,25 +19,31 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds (5));
+        this.wait = new WebDriverWait (driver, Duration.ofSeconds (5));
     }
 
     public void waitForElementUntilVisible(String Xpath) {
         wait.until (ExpectedConditions.visibilityOfElementLocated (By.xpath (Xpath)));
     }
 
-    public boolean isCartIconVisible() {
+    public boolean isElementVisible() {
+        WebElement element = driver.findElement (By.xpath ("(//a[@title='Koszyk'])[1]"));
+        return element.isDisplayed ();
+    }
 
-        return false;
+    public boolean isCartIconVisible() {
+        WebElement goToMainPageTmobileLogoBtn = driver.findElement (By.xpath ("//img[@alt='T-Mobile - przejdź na stronę główną']"));
+        goToMainPageTmobileLogoBtn.click ();
+        Assert.assertTrue (isElementVisible ());
+
+        return true;
     }
 }
 
 
 
-/*---------------------------------------------------------------------------------------------------------------------
-W BasePage stosując wrzocec Page Object Pattern powinno zawrzec się wiele przydatnych funkcji oraz metod,
-które będą wspólne dla wszystkich stron w projekcie
------------------------------------------------------------------------------------------------------------------------*/
+
+
 //
 //public class BasePage {
 //
