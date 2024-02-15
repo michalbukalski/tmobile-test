@@ -25,7 +25,6 @@ public class TestAddProductToCart {
         productPage.selectProduct();
         productPage.addToCart();
 
-        // Add assertions here to verify expected results
     }
 
     @AfterEach
