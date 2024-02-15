@@ -19,7 +19,7 @@ Feature: Wybranie telefonu z listy ofert
     Given Otwórz odpowiednią przeglądarkę
     And Przejdz na strone 'Tmobile'
     And Wybierz sekcję 'Urządzenia'
-    When Kliknij "Bez abonamentu" z kolumny 'Smartwatche i opaski'
+    When Kliknij "Bez abonamentu" z kolumny 'Smartwatche i oqpaski'
     Then Lista produktów bez abonamentu jest widoczna
 
   Scenario: Wybór pierwszego produktu
